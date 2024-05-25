@@ -1,0 +1,15 @@
+{
+  "name": "u2_lab_express_api",
+  "version": "1.0.0",
+  "description": "### Express / Mongoose API From Scratch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^8.4.0"
+  }
+}

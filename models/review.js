@@ -8,4 +8,4 @@ const Review = new Schema (
     },
     {timestamps: true},
 )
-module.exports = Review
+module.exports = mongoose.model('reviews', Review)

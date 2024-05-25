@@ -11,13 +11,10 @@ const Actor = new Schema (
         headshot: {type: Image, required: true},
         movie: [{
             movie1: {type: Schema.Types.ObjectId, ref: 'movie_id'},
-            movie2: {type: Schema.Types.ObjectId, ref: 'movie_id'},
-            movie3: {type: Schema.Types.ObjectId, ref: 'movie_id'},
-            movie4: {type: Schema.Types.ObjectId, ref: 'movie_id'},
-            movie5: {type: Schema.Types.ObjectId, ref: 'movie_id'}
+            
         }]
     },
     { timestamps: true},
 )
 
-module.exports = Actor
+module.exports = mongoose.Model('actors', Actor)

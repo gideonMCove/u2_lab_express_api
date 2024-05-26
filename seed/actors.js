@@ -111,4 +111,14 @@ const main = async () => {
             }
         }
     ]
+    await Actor.insertMany(actors)
+    console.log('Created Actors!')
+
 }
+
+const run = async () => {
+    await main()
+    db.close()
+}
+
+run()

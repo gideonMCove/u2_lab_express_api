@@ -8,13 +8,12 @@ const Actor = new Schema (
         name: {type: String, required: true},
         age: {type: Number, required: true},
         alive: {type: Boolean, required: true},
-        headshot: {type: Image, required: true},
-        movie: [{
-            movie1: {type: Schema.Types.ObjectId, ref: 'movie_id'},
+        headshotIMG: {type: String, required: true},        
+        movie: {type: Schema.Types.ObjectId, ref: 'movie_id'},
             
-        }]
+        
     },
     { timestamps: true},
 )
 
-module.exports = mongoose.Model('actors', Actor)
+module.exports = mongoose.model('actors', Actor)

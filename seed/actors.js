@@ -1,5 +1,6 @@
 const db = require('../db')
-const {Movie, Actor} = require('../models')
+const Movie = require('../models/movie')
+const Actor = require('../models/actor')
 
 db.on('error', console.error.bind(console, "MongoDB connection error"))
 
@@ -15,10 +16,9 @@ const main = async () => {
             age: 76,
             alive: true,
             headshot: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Robert_Hayes_Photo_Op_GalaxyCon_Richmond_201.jpg",
-            movie: {
-                movie1: airplane[0]._id,
+            movie: airplane[0]._id,
                 
-            }
+            
         },
         {
             name: 'Julie Hagerty',

@@ -13,12 +13,12 @@ const Movie = new Schema (
         yearReleased: {type: Number, required: true},
         description: {type: String, required: true},
         genre: {type: String, required: true},
-        poster: {type: Image, required: true},
-        starring: [{
-            star1: {type: Schema.Types.ObjectId , ref:'movie_id'},
-            star2: {type: Schema.Types.ObjectId, ref:'movie_id'}
-    }]
+        poster: {type: String, required: true},
+    //     starring: [{
+    //         star1: {type: Schema.Types.ObjectId , ref:'movie_id'},
+    //         star2: {type: Schema.Types.ObjectId, ref:'movie_id'}
+    // }]
     },
     { timestamps: true},
 )
-module.exports = mongoose.Model('movies', Movie)
+module.exports = mongoose.model('movies', Movie)

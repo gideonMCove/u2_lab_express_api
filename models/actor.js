@@ -8,8 +8,9 @@ const Actor = new Schema (
         name: {type: String, required: true},
         age: {type: Number, required: true},
         alive: {type: Boolean, required: true},
-        headshotIMG: {type: String, required: true},        
+        headshot: {type: String, required: true},                
         movie: {type: Schema.Types.ObjectId, ref: 'movie_id'},
+        
             
         
     },

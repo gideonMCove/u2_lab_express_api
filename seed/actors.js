@@ -25,90 +25,81 @@ const main = async () => {
             age: 68,
             alive: true,
             headshot: "https://upload.wikimedia.org/wikipedia/commons/0/00/Julie_Hagerty_Sidewalks_Entertainment_2019.png",
-            movie: {
-                movie1: airplane[0]._id,
+            movie: airplane[0]._id,
                 
-            }
+            
         },
         {
             name: 'Tommy Lee Jones',
             age: 77,
             alive: true,
             headshot: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Tommy_Lee_Jones_the_Jury_President_at_Opening_Ceremony_of_the_Tokyo_International_Film_Festival_2017_%2825332220247%29.jpg/1200px-Tommy_Lee_Jones_the_Jury_President_at_Opening_Ceremony_of_the_Tokyo_International_Film_Festival_2017_%2825332220247%29.jpg",
-            movie: {
-                movie1: noCountryForOldMen[0]._id,
+            movie: noCountryForOldMen[0]._id,
                 
-            }
+            
         },
         {
             name: 'Javier Bardem',
             age: 55,
             alive: true,
             headshot: "https://upload.wikimedia.org/wikipedia/commons/f/fe/Premios_Goya_2018_-_Javier_Bardem_%28cropped%29.jpg",
-            movie: {
-                movie1: noCountryForOldMen[0]._id,
+            movie: noCountryForOldMen[0]._id,
                 
-            }
+            
         },
         {
             name: 'Colin Farrell',
             age: 47,
             alive: true,
             headshot: "https://m.media-amazon.com/images/M/MV5BMTg4NzM5NDk0MV5BMl5BanBnXkFtZTcwNzAzMTUxNw@@._V1_FMjpg_UX1000_.jpg",
-            movie: {
-                movie1: banshees[0]._id,
+            movie: banshees[0]._id,
                 
-            }
+            
         },
         {
             name: 'Brendan Gleeson',
             age: 69,
             alive: true,
             headshot: "https://static.wikia.nocookie.net/harrypotter/images/0/0c/Brendan_Gleeson_1.jpg/revision/latest?cb=20230817164620",
-            movie: {
-                movie1: banshees[0]._id,
+            movie:  banshees[0]._id,
                 
-            }
+            
         },
         {
             name: "Timothee Chalamet",
             age: 28,
             alive: true,
             headshot: "https://m.media-amazon.com/images/M/MV5BNThiOTM4NTAtMDczNy00YzlkLWJhNTEtZTZhNDVmYzlkZWI0XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg",
-            movie: {
-                movie1: dune[0]._id,
+            movie: dune[0]._id,
                 
-            }
+            
         },
         {
             name: "Zendaya",
             age: 27,
             alive: true,
             headshot: "https://hips.hearstapps.com/hmg-prod/images/actress-zendaya-poses-for-a-photocall-as-part-of-the-news-photo-1714172482.jpg?crop=0.66667xw:1xh;center,top&resize=640:*",
-            movie: {
-                movie1: dune[0]._id,
+            movie: dune[0]._id,
                 
-            }
+            
         },
         {
             name: "Val Kilmer",
             age: 64,
             alive: true,
             headshot: "https://m.media-amazon.com/images/M/MV5BMTk3ODIzMDA5Ml5BMl5BanBnXkFtZTcwNDY0NTU4Ng@@._V1_.jpg",
-            movie: {
-                movie1: topSecret[0]._id,
+            movie: topSecret[0]._id,
                 
-            }
+           
         },
         {
             name: "Lucy Gutteridge",
             age: 67,
             alive: true,
             headshot: "https://m.media-amazon.com/images/M/MV5BMTk3ODIzMDA5Ml5BMl5BanBnXkFtZTcwNDY0NTU4Ng@@._V1_.jpg",
-            movie: {
-                movie1: topSecret[0]._id,
+            movie: topSecret[0]._id,
                 
-            }
+            
         }
     ]
     await Actor.insertMany(actors)

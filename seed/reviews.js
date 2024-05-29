@@ -8,8 +8,8 @@ const main = async () => {
     const airplane = await Movie.find({title: "Airplane!"})
     const noCountryForOldMen = await Movie.find({title: "No Country for Old Men"})
     const banshees = await Movie.find({title: "The Banshees of Inisherin"})
-    const dune = await Movie.find({title: "Dune: Part Two"})
-    const topSecret = await Movie.find ({title: "Top Secret!"})
+    // const dune = await Movie.find({title: "Dune: Part Two"})
+    // const topSecret = await Movie.find ({title: "Top Secret!"})
 
     const reviews = [
         {
@@ -45,8 +45,8 @@ const main = async () => {
 
 
     ]
-    await Movie.insertMany(movies)
-    console.log('Created Movies!')
+    await Review.insertMany(reviews)
+    console.log('Created reviews!')
 
 }
 
